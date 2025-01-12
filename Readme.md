@@ -1,5 +1,9 @@
 # Laptop Price Prediction App
 
+## Visit the app here
+
+👉 [Laptop Price Prediction App](https://laptop-price-prediction-app-marshal.streamlit.app/)
+
 The **Laptop Price Prediction App** is a web-based application built with **Streamlit** that helps predict laptop prices based on various hardware and configuration parameters. Users can input details such as brand, CPU, GPU, weight, screen size, and more to get an estimated price for a laptop.
 
 ---
