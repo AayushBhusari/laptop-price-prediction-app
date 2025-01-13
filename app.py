@@ -80,7 +80,6 @@ def prepare_model_input(brand, cpu, gpu, device_type, memory_type, weight, cpu_f
 
 # Prepare input
 input_df = prepare_model_input(brand, cpu, gpu, device_type, memory_type, weight, cpu_frequency, ram, screen_height, screen_width)
-st.dataframe(input_df)
 
 # Load the scaler and model
 scaler = pickle.load(open('scaler.pkl', 'rb'))
