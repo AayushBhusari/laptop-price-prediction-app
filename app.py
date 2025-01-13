@@ -5,7 +5,9 @@ import pickle
 st.title('Laptop Price Prediction App')
 
 # Inputs
-brand = st.selectbox('Brand', ['MSI', 'Acer', 'Razer', 'Other'])
+brand = st.selectbox('Brand', ['MSI', 'Acer', 'Razer', 'Apple', 'Chuwi', 'Dell', 'Fujitsu', 'Google',
+                                'Huawei', 'LG', 'Lenovo', 'Mediacom', 'Microsoft', 'Razer', 'Samsung',
+                                'Toshiba', 'Vero', 'Xiaomi', 'HP', 'Other'])
 cpu = st.selectbox('CPU', ['AMD', 'Intel', 'Other'])
 gpu = st.selectbox('GPU', ['Intel', 'AMD', 'Nvidia', 'Other'])
 device_type = st.selectbox('Type', ['Workstation', 'Ultrabook', 'Gaming', 'Notebook', 'Other'])
@@ -32,6 +34,8 @@ def prepare_model_input(brand, cpu, gpu, device_type, memory_type, weight, cpu_f
         data['Acer'] = 1
     elif brand == 'Razer':
         data['Razer'] = 1
+    else:
+        data['Other'] = 1
 
     # Map CPU
     if cpu == 'AMD':
