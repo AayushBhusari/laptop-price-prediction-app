@@ -34,8 +34,6 @@ def prepare_model_input(brand, cpu, gpu, device_type, memory_type, weight, cpu_f
         data['Acer'] = 1
     elif brand == 'Razer':
         data['Razer'] = 1
-    else:
-        data['Other'] = 1
 
     # Map CPU
     if cpu == 'AMD':
