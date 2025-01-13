@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+st.set_page_config( page_title="Laptop Price Prediction" )
 st.title('Laptop Price Prediction App')
 
 # Inputs
